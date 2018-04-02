@@ -40,13 +40,8 @@ matrix = Matrix(False)
 for line in open('peaks.txt'):
 	matrix.addPeak(int(line[:-1]))
 
-
 for line in open('graph2.txt'):
 	edgeList = line.split()
 	matrix.addEdge(int(edgeList[0]), int(edgeList[1]), int(edgeList[2]))
-
-
-matrix.removeEdge(1, 4)
-
 
 matrix.printMatrix()
